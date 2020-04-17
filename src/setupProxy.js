@@ -6,8 +6,8 @@ module.exports = (app) => {
       changeOrigin: true,
     })
   );
-  app.use('/api', production());
-  app.use('/jwt', production());
+  app.use('/api', dev());
+  app.use('/jwt', dev());
 };
 
 // 自测环境

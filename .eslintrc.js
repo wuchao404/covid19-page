@@ -34,7 +34,6 @@ module.exports = {
         "react/default-props-match-prop-types": "off", // 我发现：ts的interface和props-types不能混合使用去限制同一个参数
         "react/jsx-props-no-spreading": "off", // 自定义组件中可以使用扩展操作符
         "no-undef": "warn",
-        
-
+        "react/display-name": "off"
     }
 };

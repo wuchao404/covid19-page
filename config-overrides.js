@@ -8,7 +8,6 @@ const config = override(
   addLessLoader({
     javascriptEnabled: true,
   }),
-  setWebpackPublicPath('/platformv1')
+  // setWebpackPublicPath('/platformv1')
 );
-console.log('config:',config)
 module.exports = config;
