@@ -3,7 +3,9 @@ import {Button} from 'antd';
 import './App.css';
 import _axios from './utils/axios';
 import Router from './routers';
-// import {Link} from 'react-router-dom';
+import Epidemic from './pages/epidemic/index';
+
+import {Link} from 'react-router-dom';
 
 const App = () => {
   const getList = () => {
@@ -30,11 +32,10 @@ const App = () => {
   }
   return (
     <div className="App">
-      <Button type='primary' onClick={getList}>按钮</Button>
-      <div>
-        {/* <Button type='primary' onClick={doLogin}>登陆</Button> */}
-      </div>
-      <Router />
+      
+      <Epidemic>
+        
+      </Epidemic>
     </div>
   );
 }
