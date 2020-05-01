@@ -4,6 +4,7 @@ import moment from 'moment';
 import ReactEcharts from 'echarts-for-react';
 import Card from '../components/card/index'
 import Diagram from '../components/diagram/index'
+import SortTable from '../components/sortTable/index'
 import './index.less';
 const Domestic = (props: any) => {
     useEffect(()=>{
@@ -63,7 +64,8 @@ const Domestic = (props: any) => {
         <div className="domestic_div">
             <div className="time">截止统计 {moment().format('YYYY-MM-DD HH:mm:ss ')}</div>
             <Card datas={data}></Card>
-            <Diagram></Diagram>>
+            <Diagram></Diagram>
+            <SortTable></SortTable>
         </div>
     )
 }
